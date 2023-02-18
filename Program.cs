@@ -2,22 +2,26 @@
 
 namespace PlayGround
 {
-    internal class Program
+    internal partial class Program
     {
         static void Main(string[] args)
         {
-            //class of type
+            //there is a class in C# that is of type
             //Type someType;
 
-            //one way of checking the class
-            //Person person1 = new Person();
-            //Type type1 = person1.GetType();
+            //one way of examining the class
+            Person person1 = new Person();
+            Type persontype1 = person1.GetType();
 
-            //another way. access details of the personType via dot notation
+            //another way
+            //access details of the personType via dot notation
             Type type2 = typeof(Person);
             var props = type2.GetProperties();
-            
+
             //interate and print property name and type
+            Console.WriteLine("REFLECTIONS: PROPERTIES OF PERSON CLASS");
+            Console.WriteLine("---------------------------");
+            Console.WriteLine();
             foreach (var prop in props)
             {
                 Console.WriteLine($"Property Name: {prop.Name}, Property Type: {prop.PropertyType.Name}");
@@ -33,10 +37,13 @@ namespace PlayGround
 
             var methods = type2.GetMethods();
             //interate and print method name and return type
+            Console.WriteLine("REFLECTIONS: METHODS OF PERSON CLASS");
+            Console.WriteLine("---------------------------");
+            Console.WriteLine();
             foreach (var method in methods)
             {
                 Console.WriteLine($"Method Name: {method.Name}, Return Type: {method.ReturnType.Name}");
-                //if the method name is Prin then call it
+                //if the method name is Print then call it
                 if (method.Name == "print")
                 {
                     method.GetParameters();
@@ -45,25 +52,5 @@ namespace PlayGround
             }
 
         }
-
-        public class Person
-        {
-            public string Name { get; set; }
-            public int Age { get; set; }
-            public string Address { get; set; }
-
-
-            public void print()
-            {
-                Console.WriteLine($"Name: {Name} Age: {Age} Address: {Address}");
-
-            }
-
-            public void ChangeAddresses(string newAddress)
-            {
-                Address = newAddress;
-                Console.WriteLine($"Name: {Name} Age: {Age} has a new Address: {Address}");
-            }
-        }        
     }
 }
