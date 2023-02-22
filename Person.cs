@@ -12,7 +12,6 @@
             public void print()
             {
                 Console.WriteLine($"Name: {Name} Age: {Age} Address: {Address}");
-
             }
 
             public void ChangeAddresses(string newAddress)

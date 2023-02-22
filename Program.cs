@@ -47,7 +47,7 @@ namespace PlayGround
                 if (method.Name == "print")
                 {
                     method.GetParameters();
-                    method.Invoke(person2, null);
+                    method.Invoke(person2, null); //this function needs no parameters
                 }
             }
 

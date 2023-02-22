@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayGround", "PlayGround.csproj", "{03001E48-26AC-4E98-B567-1C710BEFE9E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reflections", "Reflections.csproj", "{03001E48-26AC-4E98-B567-1C710BEFE9E1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLendings", "..\BookLendings\BookLendings.csproj", "{9ED9B2AF-6C0B-409D-861F-ADD182178C2C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertiesDiveDeep", "..\PropertiesDiveDeep\PropertiesDiveDeep.csproj", "{EF00BD77-7790-4DE6-A58B-4FCC0FC67D9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Attributes_DiveDeep", "..\Attributes_DiveDeep\Attributes_DiveDeep.csproj", "{A5E7E9F9-7267-4305-845B-F9E79C84B44C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{EF00BD77-7790-4DE6-A58B-4FCC0FC67D9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF00BD77-7790-4DE6-A58B-4FCC0FC67D9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF00BD77-7790-4DE6-A58B-4FCC0FC67D9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5E7E9F9-7267-4305-845B-F9E79C84B44C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E7E9F9-7267-4305-845B-F9E79C84B44C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E7E9F9-7267-4305-845B-F9E79C84B44C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E7E9F9-7267-4305-845B-F9E79C84B44C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
